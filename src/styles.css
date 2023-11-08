@@ -1,0 +1,9 @@
+img {
+  width: 25rem;
+}
+body {
+  font-family: "Courier New", monospace;
+  text-align: center;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}

@@ -1,2 +1,2 @@
 # mechaturtles-web
-Created with CodeSandbox
+because static is trendy now

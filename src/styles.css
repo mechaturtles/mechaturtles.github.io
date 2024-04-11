@@ -1,15 +1,42 @@
 img {
-  width: 16rem;
-  padding-top: 5rem;
+  max-width: 16vw;
 }
 body {
   font-family: "Courier New", monospace;
-  font-size: small;
-  text-align: center;
-  margin: 0;
+  font-size: 1vw;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: table;
+}
+
+#content {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+#tagline {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#tagline p {
+  margin: 0 0.5rem;
+}
+
+@media only screen and (orientation: portrait) {
+    body {
+      font-size: 3vw;
+      flex-direction: column;
+    }
+
+    #tagline {
+      flex-direction: column;
+    }
+
+    img {
+      max-width: 40vw;
+    }
 }

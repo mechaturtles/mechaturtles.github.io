@@ -20,6 +20,25 @@ body {
   vertical-align: middle;
 }
 
+#content h2 {
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  font-weight: bold;
+}
+
+#flags {
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  font-weight: bold;
+}
+
+#links a[href^="mailto:"] {
+  color: inherit;
+  text-decoration: none;
+}
+
 #tagline {
   display: flex;
   flex-wrap: wrap;

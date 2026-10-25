@@ -10,7 +10,11 @@
 
 <body>
   <div id="content">
-    <img src="./bryce-tea.png" alt="Bryce Villanueva sitting looking longingly into the camera." />
+    <picture>
+      <source type="image/avif" srcset="./bryce-tea-330.avif 330w, ./bryce-tea-500.avif 500w" sizes="(orientation: portrait) 40vw, 16vw" />
+      <source type="image/webp" srcset="./bryce-tea-330.webp 330w, ./bryce-tea-500.webp 500w" sizes="(orientation: portrait) 40vw, 16vw" />
+      <img src="./bryce-tea-500.jpg" srcset="./bryce-tea-330.jpg 330w, ./bryce-tea-500.jpg 500w" sizes="(orientation: portrait) 40vw, 16vw" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
+    </picture>
     <h1>bryce villanueva</h1>
     <h3>
       currently forward deployed engineering @ Blueflame AI

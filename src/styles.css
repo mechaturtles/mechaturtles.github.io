@@ -7,10 +7,10 @@ picture {
 }
 body {
   font-family: "Courier New", monospace;
-  font-size: 1vw;
-  width: 100vw;
-  height: 100vh;
-  position: absolute;
+  font-size: clamp(0.75rem, 1vw, 10rem);
+  margin: 0;
+  width: 100%;
+  min-height: 100dvh;
   display: table;
 }
 
@@ -32,7 +32,7 @@ body {
 
 @media only screen and (orientation: portrait) {
     body {
-      font-size: 3vw;
+      font-size: clamp(0.75rem, 3vw, 10rem);
       flex-direction: column;
     }
 

@@ -1,36 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <title>mechaturtles</title>
   <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <title>mechaturtles</title>
+  <link rel="canonical" href="https://mechaturtles.com/" />
+  <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
-  <div id="content">
-    <img src="./bryce-tea.png" alt="Bryce Villanueva sitting looking longingly into the camera." />
+  <main id="content">
+    <picture>
+      <source type="image/avif" srcset="./bryce-tea-330.avif 330w, ./bryce-tea-500.avif 500w" sizes="(orientation: portrait) 40vw, 16vw" />
+      <source type="image/webp" srcset="./bryce-tea-330.webp 330w, ./bryce-tea-500.webp 500w" sizes="(orientation: portrait) 40vw, 16vw" />
+      <img src="./bryce-tea-500.jpg" srcset="./bryce-tea-330.jpg 330w, ./bryce-tea-500.jpg 500w" sizes="(orientation: portrait) 40vw, 16vw" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
+    </picture>
     <h1>bryce villanueva</h1>
-    <h3>
+    <h2>
       currently forward deployed engineering @ Blueflame AI
-    </h3>
-    <h3>
+    </h2>
+    <h2>
       previously @ Tesla, JPMorgan Chase
-    </h3>
+    </h2>
     <div id="tagline">
       <p>engineering to spread joy and ease pain.</p>
       <p>curious cat who likes coffee chats.</p>
       <p>raised by three nations.</p>
     </div>
-    <h2>🇵🇭 🇭🇰 🇺🇸</h2>
+    <p id="flags"><span role="img" aria-label="Philippines, Hong Kong, United States">🇵🇭 🇭🇰 🇺🇸</span></p>
     <p id="links">
       <a href="/resume/">resume</a>
       |
       <a href="https://linkedin.com/in/beerice" target="_blank" rel="noopener noreferrer">linkedin</a>
       |
-      &#x62;&#x72;&#x79;&#x63;&#x65;&#x40;&#x6D;&#x65;&#x63;&#x68;&#x61;&#x74;&#x75;&#x72;&#x74;&#x6C;&#x65;&#x73;&#x2E;&#x63;&#x6F;&#x6D;
+      <a href="mailto:&#x62;&#x72;&#x79;&#x63;&#x65;&#x40;&#x6D;&#x65;&#x63;&#x68;&#x61;&#x74;&#x75;&#x72;&#x74;&#x6C;&#x65;&#x73;&#x2E;&#x63;&#x6F;&#x6D;">&#x62;&#x72;&#x79;&#x63;&#x65;&#x40;&#x6D;&#x65;&#x63;&#x68;&#x61;&#x74;&#x75;&#x72;&#x74;&#x6C;&#x65;&#x73;&#x2E;&#x63;&#x6F;&#x6D;</a>
     </p>
-  </div>
+  </main>
 </body>
 
 </html>

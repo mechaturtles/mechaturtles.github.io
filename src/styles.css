@@ -39,6 +39,20 @@ body {
   text-decoration: none;
 }
 
+a.button {
+  display: inline-block;
+  padding: 0.55em 1.1em;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a.button:hover,
+a.button:focus-visible {
+  background: #333;
+}
+
 #tagline {
   display: flex;
   flex-wrap: wrap;

@@ -3,47 +3,74 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>mechaturtles</title>
   <link rel="canonical" href="https://mechaturtles.com/" />
   <link rel="icon" href="/favicon.ico" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="/styles.css" />
 </head>
 
 <body>
-  <main id="content">
+  <div class="fade" id="fadeTop" aria-hidden="true"></div>
+  <div class="fade" id="fadeBot" aria-hidden="true"></div>
+  <div class="sheet">
     <picture>
-      <source type="image/avif" srcset="./bryce-tea-330.avif 330w, ./bryce-tea-500.avif 500w" sizes="(orientation: portrait) 40vw, 16vw" />
-      <source type="image/webp" srcset="./bryce-tea-330.webp 330w, ./bryce-tea-500.webp 500w" sizes="(orientation: portrait) 40vw, 16vw" />
-      <img src="./bryce-tea-500.jpg" srcset="./bryce-tea-330.jpg 330w, ./bryce-tea-500.jpg 500w" sizes="(orientation: portrait) 40vw, 16vw" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
+      <source type="image/avif" srcset="/bryce-tea-330.avif 330w, /bryce-tea-500.avif 500w" sizes="140px" />
+      <source type="image/webp" srcset="/bryce-tea-330.webp 330w, /bryce-tea-500.webp 500w" sizes="140px" />
+      <img src="/bryce-tea-500.jpg" srcset="/bryce-tea-330.jpg 330w, /bryce-tea-500.jpg 500w" sizes="140px" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
     </picture>
     <h1>bryce villanueva</h1>
-    <h2>
-      currently forward deployed engineering @ Blueflame AI
-    </h2>
-    <h2>
-      previously @ Tesla, JPMorgan Chase
-    </h2>
-    <div id="tagline">
-      <p>engineering to spread joy and ease pain.</p>
-      <p>curious cat who likes coffee chats.</p>
-      <p>raised by three nations.</p>
+    <div class="sec">
+      <div class="lbl">NOW</div>
+      currently forward deployed engineering <span class="nb">@ <a href="https://blueflame.ai" target="_blank" rel="noopener noreferrer">Blueflame AI</a></span><br>
+      previously engineering <span class="nb">@ <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer">Tesla</a>,</span> <span class="nb"><a href="https://www.jpmorganchase.com" target="_blank" rel="noopener noreferrer">JPMorgan Chase</a></span>
     </div>
-    <p id="flags"><span role="img" aria-label="Philippines, Hong Kong, United States">🇵🇭 🇭🇰 🇺🇸</span></p>
-    <p id="links">
-      <a href="/demos/">demos</a>
-      |
-      <a href="/resume/">resume</a>
-      |
-      <a href="https://linkedin.com/in/beerice" target="_blank" rel="noopener noreferrer">linkedin</a>
-      |
-      <a href="/time/">time</a>
-      |
-      <a href="mailto:&#x62;&#x72;&#x79;&#x63;&#x65;&#x40;&#x6D;&#x65;&#x63;&#x68;&#x61;&#x74;&#x75;&#x72;&#x74;&#x6C;&#x65;&#x73;&#x2E;&#x63;&#x6F;&#x6D;">&#x62;&#x72;&#x79;&#x63;&#x65;&#x40;&#x6D;&#x65;&#x63;&#x68;&#x61;&#x74;&#x75;&#x72;&#x74;&#x6C;&#x65;&#x73;&#x2E;&#x63;&#x6F;&#x6D;</a>
-    </p>
-  </main>
+    <hr>
+    <div class="sec">
+      book <a href="https://calendar.proton.me/bookings#-lfAbQS2cbkMY5UXOrz39rMpv8CIvqtGZuspZOYOJkM=" target="_blank" rel="noopener noreferrer">TIME</a> with me<br>
+      my favorite <a href="/spaces/">SPACES</a><br>
+      <a href="/resources/">RESOURCES</a> i can share
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">VALUES</div>
+      <div class="v"><b>first principles</b><span class="vt">understand the problem and its constraints, then the solution will follow.</span></div>
+      <div class="v"><b>barter and trade</b><span class="vt">grow arbitrage scenarios where everyone wins.</span></div>
+      <div class="v"><b>creativity</b><span class="vt">work with your hands, then co-pilot with machines.</span></div>
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">WHY MECHATURTLES</div>
+      <div class="v"><b><a href="/mecha/">mecha</a></b><span class="vt">humans and machines, synchronized.</span></div>
+      <div class="v"><b><a href="/turtles/">turtles</a></b><span class="vt">go slow and take your time.</span></div>
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">ME</div>
+      i'm a curious cat who likes coffee chats.<br>
+      i was raised by <span class="nb">three nations. <span role="img" aria-label="Philippines, Hong Kong, United States">🇵🇭 🇭🇰 🇺🇸</span></span>
+    </div>
+    <div class="sec"><span class="nb"><a href="https://mechaturtles.com/demos/">demos</a> | <a href="/resume/">resume</a> |</span> <a href="mailto:bryce@mechaturtles.com">bryce@mechaturtles.com</a></div>
+    <div class="sec">
+      <div class="lbl">SOCIALS</div>
+      <a href="https://linkedin.com/in/beerice" target="_blank" rel="noopener noreferrer">linkedin</a> | <!-- TODO: no github profile URL in this repo -->github
+    </div>
+    <footer>
+      <nav aria-label="site">
+        <span class="nb"><a href="/">home</a> ·</span>
+        <span class="nb"><a href="/time/">time</a> ·</span>
+        <span class="nb"><a href="/spaces/">spaces</a> ·</span>
+        <span class="nb"><a href="/resources/">resources</a> ·</span>
+        <span class="nb"><a href="/mecha/">mecha</a> ·</span>
+        <span class="nb"><a href="/turtles/">turtles</a> ·</span>
+        <span class="nb"><a href="https://mechaturtles.com/demos/">demos</a> ·</span>
+        <span class="nb"><a href="/resume/">resume</a></span>
+      </nav>
+    </footer>
+  </div>
+  <script src="/scroll.js"></script>
 </body>
 
 </html>

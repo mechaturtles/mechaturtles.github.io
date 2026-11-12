@@ -1,42 +1,125 @@
-img {
-  max-width: 16vw;
-  height: auto;
-}
-picture {
-  display: contents;
-}
 body {
-  font-family: "Courier New", monospace;
-  font-size: clamp(0.75rem, 1vw, 10rem);
+  font-family: "DejaVu Sans Mono", "Courier New", monospace;
+  font-size: 15px;
+  line-height: 1.6;
   margin: 0;
-  width: 100%;
-  min-height: 100dvh;
-  display: table;
+  color: #222;
+  background: #fff;
 }
 
-#content {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#content h2 {
-  font-size: 1.17em;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  font-weight: bold;
-}
-
-#flags {
-  font-size: 1.5em;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
-  font-weight: bold;
-}
-
-#links a[href^="mailto:"] {
-  color: inherit;
+a {
+  color: #2a5db0;
   text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.sheet {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 640px;
+  padding: 0 28px;
+  text-wrap: balance;
+}
+
+.sheet picture {
+  display: block;
+}
+
+.sheet picture img {
+  width: 140px;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px;
+}
+
+.sheet h1 {
+  font-size: 22px;
+  font-weight: normal;
+  margin: 0 0 16px;
+}
+
+.sec {
+  margin: 22px 0;
+}
+
+.lbl {
+  font-size: 12px;
+  color: #444;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  margin-bottom: 4px;
+}
+
+.sheet hr {
+  border: 0;
+  border-top: 1px solid #ccc;
+  width: 60%;
+  margin: 24px auto;
+}
+
+.v {
+  margin: 16px 0;
+}
+
+.v b {
+  display: block;
+  font-weight: 600;
+  color: #222;
+}
+
+.vt {
+  display: block;
+  text-wrap: balance;
+}
+
+.nb {
+  white-space: nowrap;
+}
+
+.sheet footer {
+  margin-top: 40px;
+  padding-top: 14px;
+  border-top: 1px solid #ddd;
+  font-size: 12px;
+  color: #666;
+}
+
+.page {
+  box-sizing: border-box;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  text-align: center;
+}
+
+.page main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.6em 0;
+}
+
+.page footer {
+  margin-top: 2em;
+}
+
+.page footer nav {
+  line-height: 1.7;
+}
+
+main.tbd p {
+  margin: 0;
 }
 
 a.button {
@@ -51,38 +134,32 @@ a.button {
 a.button:hover,
 a.button:focus-visible {
   background: #333;
+  color: #fff;
 }
 
-#tagline {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.fade {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 110px;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  z-index: 5;
 }
 
-#tagline p {
-  margin: 0 0.5rem;
+#fadeTop {
+  top: 0;
+  opacity: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.42), rgba(0, 0, 0, 0.18) 50%, rgba(0, 0, 0, 0));
 }
 
-@media only screen and (orientation: portrait) {
-    body {
-      font-size: clamp(0.75rem, 3vw, 10rem);
-      flex-direction: column;
-    }
-
-    #tagline {
-      flex-direction: column;
-    }
-
-    img {
-      max-width: 40vw;
-    }
+#fadeBot {
+  bottom: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.18) 50%, rgba(0, 0, 0, 0.42));
 }
 
-@media only screen and (max-height: 450px) {
-  #content h1,
-  #content h2,
-  #flags,
-  #links {
-    margin-block: 0.5em;
+@media (max-width: 600px) {
+  .fade {
+    height: 70px;
   }
 }

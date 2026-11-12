@@ -13,65 +13,60 @@
 </head>
 
 <body>
-  <div class="shade shade-top" id="shade-top" aria-hidden="true"></div>
-  <div class="shade shade-bottom" id="shade-bottom" aria-hidden="true"></div>
-  <div class="page home">
-    <main id="content">
-      <picture>
-        <source type="image/avif" srcset="/bryce-tea-330.avif 330w, /bryce-tea-500.avif 500w" sizes="140px" />
-        <source type="image/webp" srcset="/bryce-tea-330.webp 330w, /bryce-tea-500.webp 500w" sizes="140px" />
-        <img src="/bryce-tea-500.jpg" srcset="/bryce-tea-330.jpg 330w, /bryce-tea-500.jpg 500w" sizes="140px" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
-      </picture>
-      <h1>bryce villanueva</h1>
-      <p class="role">currently forward deployed engineering @ <a href="https://blueflame.ai" target="_blank" rel="noopener noreferrer"><span class="nobreak">Blueflame AI</span></a></p>
-      <p class="role">previously @ <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer">Tesla</a>, <a href="https://www.jpmorganchase.com" target="_blank" rel="noopener noreferrer"><span class="nobreak">JPMorgan Chase</span></a></p>
-      <p>engineering to spread joy and <span class="nobreak">ease pain.</span></p>
-      <p>curious cat who likes <span class="nobreak">coffee chats.</span></p>
-      <p>raised by <span class="nobreak">three nations.</span></p>
-      <p id="flags"><span role="img" aria-label="Philippines, Hong Kong, United States">🇵🇭 🇭🇰 🇺🇸</span></p>
-      <section class="block">
-        <p class="label">values</p>
-        <p><a href="/time/">time</a> · <a href="/spaces/">spaces</a> · <a href="/resources/">resources</a></p>
-        <p>i grow arbitrage scenarios where <span class="nobreak">everyone wins.</span></p>
-        <p>first principles. work with your hands, then <span class="nobreak">co-pilot with machines.</span></p>
-        <p>barter and trade.</p>
-      </section>
-      <section class="block">
-        <p class="label">why mechaturtles</p>
-        <p><a href="/mecha/">mecha</a>: humans and <span class="nobreak">machines, together.</span></p>
-        <p><a href="/turtles/">turtles</a>: go slow, take <span class="nobreak">time seriously.</span></p>
-      </section>
-      <p class="book"><a href="https://calendar.proton.me/bookings#-lfAbQS2cbkMY5UXOrz39rMpv8CIvqtGZuspZOYOJkM=" target="_blank" rel="noopener noreferrer">book TIME with me</a></p>
-      <p>
-        <a href="https://mechaturtles.com/demos/">demos</a>
-        |
-        <a href="/resume/">resume</a>
-      </p>
-      <p>
-        <a href="https://linkedin.com/in/beerice" target="_blank" rel="noopener noreferrer">linkedin</a>
-        |
-        <!-- TODO: no github profile URL in this repo -->
-        github
-      </p>
-      <p><a href="mailto:bryce@mechaturtles.com">bryce@mechaturtles.com</a></p>
-    </main>
+  <div class="fade" id="fadeTop" aria-hidden="true"></div>
+  <div class="fade" id="fadeBot" aria-hidden="true"></div>
+  <div class="sheet">
+    <picture>
+      <source type="image/avif" srcset="/bryce-tea-330.avif 330w, /bryce-tea-500.avif 500w" sizes="140px" />
+      <source type="image/webp" srcset="/bryce-tea-330.webp 330w, /bryce-tea-500.webp 500w" sizes="140px" />
+      <img src="/bryce-tea-500.jpg" srcset="/bryce-tea-330.jpg 330w, /bryce-tea-500.jpg 500w" sizes="140px" width="500" height="666" alt="Bryce Villanueva sitting looking longingly into the camera." fetchpriority="high" decoding="async" />
+    </picture>
+    <h1>bryce villanueva</h1>
+    <div class="sec">
+      <div class="lbl">NOW</div>
+      currently forward deployed engineering <span class="nb">@ <a href="https://blueflame.ai" target="_blank" rel="noopener noreferrer">Blueflame AI</a></span><br>
+      previously engineering <span class="nb">@ <a href="https://www.tesla.com" target="_blank" rel="noopener noreferrer">Tesla</a>,</span> <span class="nb"><a href="https://www.jpmorganchase.com" target="_blank" rel="noopener noreferrer">JPMorgan Chase</a></span>
+    </div>
+    <hr>
+    <div class="sec">
+      book <a href="https://calendar.proton.me/bookings#-lfAbQS2cbkMY5UXOrz39rMpv8CIvqtGZuspZOYOJkM=" target="_blank" rel="noopener noreferrer">TIME</a> with me<br>
+      my favorite <a href="/spaces/">SPACES</a><br>
+      <a href="/resources/">RESOURCES</a> i can share
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">VALUES</div>
+      <div class="v"><b>first principles</b><span class="vt">understand the problem and its constraints, then the solution will follow.</span></div>
+      <div class="v"><b>barter and trade</b><span class="vt">grow arbitrage scenarios where everyone wins.</span></div>
+      <div class="v"><b>creativity</b><span class="vt">work with your hands, then co-pilot with machines.</span></div>
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">WHY MECHATURTLES</div>
+      <div class="v"><b><a href="/mecha/">mecha</a></b><span class="vt">humans and machines, synchronized.</span></div>
+      <div class="v"><b><a href="/turtles/">turtles</a></b><span class="vt">go slow and take your time.</span></div>
+    </div>
+    <hr>
+    <div class="sec">
+      <div class="lbl">ME</div>
+      i'm a curious cat who likes coffee chats.<br>
+      i was raised by <span class="nb">three nations. <span role="img" aria-label="Philippines, Hong Kong, United States">🇵🇭 🇭🇰 🇺🇸</span></span>
+    </div>
+    <div class="sec"><span class="nb"><a href="https://mechaturtles.com/demos/">demos</a> | <a href="/resume/">resume</a> |</span> <a href="mailto:bryce@mechaturtles.com">bryce@mechaturtles.com</a></div>
+    <div class="sec">
+      <div class="lbl">SOCIALS</div>
+      <a href="https://linkedin.com/in/beerice" target="_blank" rel="noopener noreferrer">linkedin</a> | <!-- TODO: no github profile URL in this repo -->github
+    </div>
     <footer>
       <nav aria-label="site">
-        <a href="/">home</a>
-        ·
-        <a href="/time/">time</a>
-        ·
-        <a href="/spaces/">spaces</a>
-        ·
-        <a href="/resources/">resources</a>
-        ·
-        <a href="/mecha/">mecha</a>
-        ·
-        <a href="/turtles/">turtles</a>
-        ·
-        <a href="https://mechaturtles.com/demos/">demos</a>
-        ·
-        <a href="/resume/">resume</a>
+        <span class="nb"><a href="/">home</a> ·</span>
+        <span class="nb"><a href="/time/">time</a> ·</span>
+        <span class="nb"><a href="/spaces/">spaces</a> ·</span>
+        <span class="nb"><a href="/resources/">resources</a> ·</span>
+        <span class="nb"><a href="/mecha/">mecha</a> ·</span>
+        <span class="nb"><a href="/turtles/">turtles</a> ·</span>
+        <span class="nb"><a href="https://mechaturtles.com/demos/">demos</a> ·</span>
+        <span class="nb"><a href="/resume/">resume</a></span>
       </nav>
     </footer>
   </div>

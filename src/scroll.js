@@ -1,12 +1,15 @@
 (function () {
-  var topShade = document.getElementById("shade-top");
-  if (!topShade) return;
+  var t = document.getElementById("fadeTop");
+  var b = document.getElementById("fadeBot");
+  if (!t || !b) return;
 
-  function update() {
-    if (window.scrollY > 0) topShade.classList.add("shown");
-    else topShade.classList.remove("shown");
+  function u() {
+    var max = document.documentElement.scrollHeight - window.innerHeight;
+    t.style.opacity = window.scrollY > 10 ? 1 : 0;
+    b.style.opacity = window.scrollY < max - 10 ? 1 : 0;
   }
 
-  update();
-  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("scroll", u);
+  window.addEventListener("resize", u);
+  u();
 })();

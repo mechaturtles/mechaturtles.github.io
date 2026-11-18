@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'none'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; form-action 'self'" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Book a 30-minute video call with Bryce Villanueva." />
   <title>book time with me — mechaturtles</title>
@@ -18,9 +18,13 @@
       <p><a href="/">← mechaturtles</a></p>
       <h1>book time with me</h1>
       <p>a 30-minute video call.</p>
-      <p>
-        <a class="button" href="https://calendar.proton.me/bookings#-lfAbQS2cbkMY5UXOrz39rMpv8CIvqtGZuspZOYOJkM=" target="_blank" rel="noopener">book a time</a>
-      </p>
+      <p>enter the 4-digit code i shared with you.</p>
+      <form id="unlock" class="unlock" autocomplete="off">
+        <label for="code" class="sr-only">booking code</label>
+        <input id="code" name="code" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" placeholder="0000" required />
+        <button id="unlockBtn" class="button" type="submit">book a time</button>
+      </form>
+      <p id="unlockStatus" class="unlock-status" role="status" aria-live="polite"></p>
     </main>
     <footer>
       <nav aria-label="site">
@@ -42,6 +46,7 @@
       </nav>
     </footer>
   </div>
+  <script src="/time/unlock.js" defer></script>
 </body>
 
 </html>
